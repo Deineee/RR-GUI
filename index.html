@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round Robin CPU Scheduling Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Round Robin CPU Scheduling Simulator</h1>
+    <div class="input-container">
+      <label for="process-id">Process ID (comma-separated):</label>
+      <input type="text" id="process-id">
+    </div>
+    <div class="input-container">
+      <label for="arrival-time">Arrival Time (comma-separated):</label>
+      <input type="text" id="arrival-time">
+    </div>
+    <div class="input-container">
+      <label for="burst-time">Burst Time (comma-separated):</label>
+      <input type="text" id="burst-time">
+    </div>
+    <div class="input-container">
+      <label for="time-quantum">Time Quantum:</label>
+      <input type="number" id="time-quantum" min="1">
+    </div>
+    <button onclick="runSimulation()">Run Simulation</button>
+    <div class="output-container">
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="rr.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
